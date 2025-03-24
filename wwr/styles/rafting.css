@@ -1,3 +1,13 @@
-h1 {
-    font-family: "Oswald", serif;
-}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+  }
+  .heading-oswald {
+    font-family: 'Oswald', sans-serif;
+  }
+  body, p {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .text-opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
+
