@@ -126,18 +126,18 @@ footer {
   text-align: right;
 
   display: flex;
-    justify-content: flex-end; /* Align content to the right */
-    padding: 10px; /* Adjust padding as needed */
-    background-color: #1E3A5F; /* Optional: Adjust background color */
+    justify-content: flex-end; 
+    padding: 10px; 
+    background-color: #1E3A5F; 
 }
 
 .social-links {
     display: flex;
-    gap: 10px; /* Adds space between icons */
+    gap: 10px; 
 }
 
 .social-links img {
-    width: 30px; /* Adjust size as needed */
+    width: 30px; 
     height: auto;
 }
 
