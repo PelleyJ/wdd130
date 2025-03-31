@@ -121,9 +121,24 @@ figcaption {
 
 
 footer {
-  background: #1E3A5F;
+  background-color: #1E3A5F;
   padding: 15px;
   text-align: right;
+
+  display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #1E3A5F; /* Optional: Adjust background color */
+}
+
+.social-links {
+    display: flex;
+    gap: 10px; /* Adds space between icons */
+}
+
+.social-links img {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
 }
 
 .social-links {
