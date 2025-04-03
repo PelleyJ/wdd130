@@ -113,8 +113,8 @@ figcaption {
 
 #contact-info iframe {
   width: 100%;
-  max-width: 600px;
-  height: 600px;
+  max-width: 300px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   display: block;
