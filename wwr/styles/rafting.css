@@ -193,70 +193,19 @@ main {
   margin-bottom: 20px;
 }
 
-iframe {
+#contact-info p {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Google Map iframe styling */
+#contact-info iframe {
   width: 100%;
+  max-width: 600px;
   height: 300px;
-  border: none;
-}
-
-.team-gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.team-gallery figure {
-  text-align: center;
-}
-
-.team-gallery img {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-}
-
-button {
-  background-color: #004466;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #003355;
-}
-
-footer {
-  text-align: center;
-  background: #003355;
-  color: white;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-.social-links img {
-  width: 30px;
-  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
 }
