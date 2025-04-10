@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X- UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/rafting.css">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <title>White Water Rapids Home Page</title>
 </head>
 
@@ -20,37 +19,60 @@
             <img src="images/white rapids.jpg" alt="logo">
         </div>
         <nav>
-            <a href="intex.html">Home</a>
-            <a href="intex.html">About Us</a>
-            <a href="intex.html">Trips</a>
-            <a href="intex.html">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
-        <div id="banner-box">
-            <section class="banner">
-                <img src="images/rafting14_600.jpg" alt="banner image desc">
-                <h1>White Water Rapids Rafting</h1>
-                <article>
-                    <img src="https://placeimg.com/75/75/animals" alt="image">
-                    <p>qwerty</p>
-                </article>
-        </div>
+        <section class="banner-container">
+            <img src="images/rafting14_600.jpg" alt="banner image desc" class="hero-image">
+            <h1 class="hero-text">White Water Rapids Rafting</h1>
+        </section>
+
+        <section class="call-to-action">
+            <p>Ready for your next adventure?</p>
+            <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        </section>
+
+        <section class="grid-layout">
+            <div>
+                <img src="images/rafting42_600.jpg" alt="Family Rafting">
+                <p>Perfect for families and beginners looking for a fun day on the river.</p>
+            </div>
+            <div>
+                <img src="images/rafting47_600.jpg" alt="Extreme Adventure">
+                <p>Extreme adventure packages for experienced thrill-seekers!</p>
+            </div>
+            <div>
+                <img src="images/rafting64_600.jpg" alt="Nature Views">
+                <p>Enjoy breathtaking nature views as you paddle downstream.</p>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Sign up for our newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
         <section>
             <h2>History</h2>
-            <p>alsdfjlaksdjf</p>
-        </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting14_600.jpg" alt="banner image">
-            <img src="images/rafting42_600.jpg" alt="banner image">
-            <img src="images/rafting47_600.jpg" alt="banner image">
-            <img src="images/rafting59_600.jpg" alt="banner image">
-            <img src="images/rafting64_600.jpg" alt="banner image">
+            <p>White Water Rapids has been thrilling adventure seekers since 1998. With professional guides and world-class river routes, we’re your best choice for whitewater fun!</p>
         </section>
     </main>
+
     <footer>
-        <nav class="sociallinks">
+        <div class="sociallinks">
             <a href="https://facebook.com">
                 <img src="images/5365678_fb_facebook_facebook logo_icon.png" alt="Facebook">
             </a>
@@ -60,7 +82,7 @@
             <a href="https://instagram.com">
                 <img src="images/6929237_instagram_icon.png" alt="Instagram">
             </a>
-        </nav>
+        </div>
     </footer>
 </body>
 </html>

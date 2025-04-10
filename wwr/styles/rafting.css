@@ -1,28 +1,27 @@
+/* Font families */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
-  }
-  .heading-oswald {
-    font-family: 'Oswald', sans-serif;
-  }
-  body, p {
-    font-family: 'Open Sans', sans-serif;
-  }
-  .text-opensans {
-    font-family: 'Open Sans', sans-serif;
-  }
-
-.hero img{
-  display: block;
-  width: 100%;
-  height: auto;
+  font-family: 'Oswald', sans-serif;
 }
+.heading-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+body, p {
+  font-family: 'Open Sans', sans-serif;
+}
+.text-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* General layout */
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
   box-sizing: border-box;
 }
 
+/* Header and Navigation */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -40,6 +39,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+  background: #003355;
+  padding: 10px 0;
 }
 
 nav a {
@@ -48,6 +49,105 @@ nav a {
   font-weight: bold;
 }
 
+/* Hero Section */
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+/* CTA Section */
+.call-to-action {
+  text-align: center;
+  padding: 30px;
+  background-color: #eef6fb;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Grid Layout Section */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.grid-layout div img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid-layout div p {
+  margin-top: 0.5rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #e2f1f8;
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 0.6rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Banner Section */
 #banner-box {
   text-align: center;
   padding: 20px;
@@ -59,11 +159,7 @@ nav a {
   object-fit: cover;
 }
 
-#history {
-  padding: 20px;
-  background: #F4F4F4;
-}
-
+/* Adventures Section */
 #adventures {
   text-align: center;
   padding: 20px;
@@ -91,6 +187,12 @@ nav a {
 figcaption {
   font-weight: bold;
   margin-top: 5px;
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+  width: 100%;
 }
 
 figure {
@@ -101,93 +203,30 @@ figure {
   max-width: 220px;
   margin: auto;
   align-items: center;
-  text-align: center;  
-}
-
-img {
-  max-width: 220px;
-  max-height: 150px;
-  border-radius: 5px; 
-}
-
-figcaption {
-  background-color: #222;
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
   text-align: center;
-  width: 100%;
 }
 
-
+/* Footer */
 footer {
   background-color: #1E3A5F;
-  padding: 15px;
-  text-align: right;
-
-  display: flex;
-    justify-content: flex-end; 
-    padding: 10px; 
-    background-color: #1E3A5F; 
-}
-
-.social-links {
-    display: flex;
-    gap: 10px; 
-}
-
-.social-links img {
-    width: 30px; 
-    height: auto;
-}
-
-.social-links {
+  padding: 15px 20px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
   gap: 15px;
 }
 
 .social-links img {
   width: 30px;
   height: 30px;
+  object-fit: contain;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  background-color: #004466;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  background: #003355;
-  padding: 10px 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
-  max-width: 900px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Contact Info */
 #contact-info {
   text-align: center;
   margin-bottom: 20px;
